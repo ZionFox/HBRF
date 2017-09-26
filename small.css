@@ -1,0 +1,158 @@
+header {
+    width: 100%;
+    height: 30vw;
+}
+header #heading { 
+    text-align: center;
+    width: 100%;
+}
+header #heading h1 { font-size: 10vw; }
+header #heading h2 { 
+    margin: 0px;
+    font-size: 5vw;
+    letter-spacing: 4vw;
+}
+header .media_tiles {
+    float: none;
+    text-align: center;
+}
+header .media_tiles .follow {
+    height: 12vw;
+    width: 17vw;
+    margin-top: 2.5vw;
+}
+header .media_tiles a, header .media_tiles div { margin: 0px 0px 0px 0.1vw; }
+header .media_tiles img:not(.follow) {
+    height: 6.5vw;
+    max-height: 38px;
+    width: 8.3vw;
+    max-width: 48px;
+}
+header .media_tiles #login {
+    font-size: 5.5vw;
+    padding: 4px 10px;
+}
+
+main {
+    width: calc(100% - 38px);
+    padding: 8px;
+}
+
+article .feat_img {
+    width: calc(100% - 8px);
+    height: 50vw;
+}
+article .feat_title { padding: 4px 8px 4px 4px; }
+article .feat_title h2 { font-size: 2em; }
+article .feat_img .feat_blurb {
+    font-size: 1em;
+    padding: .5em;
+}
+
+article #group {
+    width: 100%;
+    margin: 16px 0px;
+}
+article #group p {
+    font-size: 1em;
+}
+article #group .total_goal {
+    font-size: 1.7em;
+    top: -14px;
+}
+article #group .button {
+    width: 350px;
+    left: calc(50% - 183px);
+    margin: 0px;
+}
+
+main article:first-child { height: 330px; }
+
+article .tagline { font-size: 1em; }
+
+#donate { padding: 52px 26px 0px; }
+#donate .tagline { margin-top: -48px; }
+#donate .button { margin-bottom: 18px; }
+
+#sub .hint {
+    display: initial;
+    width: 300px;
+    font-size: 1.5em;
+    font-family: digitalt, arial, sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: calc(50% - 150px);
+    bottom: -4px;
+}
+
+#sub .tagline { margin-left: -8px; }
+
+footer { width: 100%; }
+
+/* media queries */
+
+@media screen and (max-width: 1228px) {
+    #donate { height: 310px; }
+}
+
+@media screen and (max-width: 974px) {
+    #slider .images { opacity: 0; }
+}
+
+@media screen and (max-width: 804px) {
+    #donate { height: 450px; }
+}
+
+@media screen and (max-width: 470px) {
+    article .feat_title h2 { font-size: 1.5em; }
+}
+
+@media screen and (max-width: 425px) {
+    article .feat_title h3 { font-size: .7em; }
+    article .feat_title h2 { font-size: 1em; }
+    article .feat_img .feat_blurb { font-size: .8em; }
+
+    article #group .total_goal {
+        font-size: 1.2em;
+        top: -4px;
+    }
+    article #group .button { font-size: 18pt; width: 90.7%; left: 0px; margin: 10px; }
+
+    .button { width: 224px; }
+    #donate { height: 425px; padding: 52px 8px 0px; }
+    #donate .button { font-size: 33pt; margin-left: 28px; }
+}
+
+@media screen and (max-width: 375px) {
+    article #group .button { width: 89.3%; }
+    article #group .button.once { font-size: 16pt; margin-bottom: 64px; }
+    article #group .button.once img { width: 64px; top: -11px; }
+
+    article #group .button.month { padding: 4px 8px; }
+    article #group .button.month span:first-child { font-size: 11pt; width: 83px; }
+    article #group .button.month span:not(:first-child) { font-size: 20pt; transform: scale(1.3, 1.6) translateY(-2.5px); }
+    article #group .button.month img { width: 78px; top: -12px; }
+
+    article .tagline { font-size: 0.8em; padding-left: 22px; }
+
+    .button { width: 176px; }
+    #donate { height: 378px; }
+    #donate .button { font-size: 26pt; padding-left: 56px; }
+    #donate .button img { height: 80px; top: calc(50% - 40px); }
+
+    .card { width: 312px; }
+}
+
+@media screen and (max-width: 320px) {
+    article #group .button { width: 87.2%; }
+    article #group .button.once { font-size: 13pt; margin-bottom: 56px; }
+    article #group .button.once img { width: 56px; top: -13px; }
+
+    article #group .button.month span:first-child { font-size: 9pt; width: 68px; margin-right: 19px; }
+    article #group .button.month span:not(:first-child) { font-size: 16pt; }
+    article #group .button.month img { width: 72px; top: -14px; }
+
+    .button { width: 160px; }
+    #donate { height: 360px; }
+    #donate .button { font-size: 23pt; }
+}
